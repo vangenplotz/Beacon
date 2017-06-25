@@ -2,14 +2,14 @@
 namespace Craft;
 
 /**
- * SEPU by Vangen & Plotz
+ * Beacon by Vangen & Plotz
  *
  * @author      Vangen & Plotz <http://vangenplotz.no>
- * @package     SEPU
+ * @package     Beacon
  * @since       Craft 2.6
- * @copyright   Copyright (c) 2016, Vangen & Plotz AS
- * @license     http://opensource.org/licenses/mit-license.php MIT License
- * @link        https://bitbucket.org/vangpl/e-ressurs/overview
+ * @copyright   Copyright (c) 2017, Vangen & Plotz AS
+ * @license     http://www.apache.org/licenses/LICENSE-2.0
+ * @link        https://github.com/vangenplotz/Beacon
  */
 
 class BeaconPlugin extends BasePlugin
