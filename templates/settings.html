@@ -1,0 +1,46 @@
+{% import '_includes/forms' as forms %}
+
+{{ forms.textField({
+    label: "Monitor site URL"|t,
+    id: 'monitorSiteUrl',
+    name: 'monitorSiteUrl',
+    instructions : "Link to the site monitoring this site."|t,
+    value: settings.monitorSiteUrl,
+    errors: settings.getErrors('monitorSiteUrl')
+}) }}
+
+{{ forms.textField({
+    label: "Monitor secret"|t,
+    id: 'monitorSecret',
+    name: 'monitorSecret',
+    instructions : "Use the secret you find on your monitoring site."|t,
+    value: settings.monitorSecret,
+    errors: settings.getErrors('monitorSecret')
+}) }}
+
+{{ forms.textField({
+    label: "Site name"|t,
+    id: 'siteName',
+    name: 'siteName',
+    instructions : "Navnet på siden."|t,
+    value: settings.siteName,
+    errors: settings.getErrors('siteName')
+}) }}
+
+{{ forms.textField({
+    label: "Site secret"|t,
+    id: 'siteSecret',
+    name: 'siteSecret',
+    instructions : "Secret that is sent to monitor."|t,
+    value: settings.siteSecret,
+    errors: settings.getErrors('siteSecret')
+}) }}
+
+
+{{ forms.lightswitchField({
+    onLabel: "On",
+    offLabel: "Off",
+    label: "Auto update this plugin"|t,
+    name: "autoupdate",
+    on: settings.autoupdate
+}) }}
